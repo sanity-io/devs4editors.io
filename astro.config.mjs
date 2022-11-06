@@ -8,5 +8,8 @@ import sanity from "astro-sanity";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
-  integrations: [mdx(), sitemap(), sanity()]
+  integrations: [mdx(), sitemap(), sanity({
+    projectId: '943jx8ed',
+    dataset: 'production',
+  })]
 });
