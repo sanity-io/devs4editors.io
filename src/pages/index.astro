@@ -1,50 +1,44 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <!-- <Header title={SITE_TITLE} /> -->
+    <main>
+      <h1>Developers 4 Editors</h1>
+      <p>
+        This page was made as a part of the <strong
+          >How Developer Experience Holds Content Teams Back (and how to fix it)</strong
+        >, presented by <a href="https://www.knutmelvaer.no">Knut Melvær</a> (<a
+          href="https://www.sanity.io">Sanity.io</a
+        >) at <a href="https//jamstackconf.org">Jamstack Conf SF, 2022</a>.
+      </p>
+      <h2>Passionate about editorial experience?</h2>
+      <p>
+        Join the #ediotial-experience channel, and share your thougths and
+        questions!
+      </p>
+      <h2>Principles</h2>
+      <h3>
+        #1 Don‘t expect content creators to write in your <code
+          >[**special**](syntax)</code
+        >
+      </h3>
+      <p><a href="">Add your experience</a></p>
+      <h3>#2 Let content creators collaborate in the CMS</h3>
+      <h3>#3 Give content creators flexibility where it matters</h3>
+      <h3>#4 Give content creators context, especially in decoupled systems</h3>
+      <h3>#5 Ask content creators what they need (and why)</h3>
+      <h2>Slide Deck</h2>
+    </main>
+    <Footer />
+  </body>
 </html>
