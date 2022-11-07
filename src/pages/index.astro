@@ -14,7 +14,10 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
   <body>
     <main>
       <h1>
-        <a href="/">👩‍💻 💞 ✍️<br /> Developers 4 Editors</a>
+        <a href="/"
+          >👩‍💻 💞 ✍️<br /> How Developer Experience Holds Content Teams Back (and
+          how to fix it)</a
+        >
       </h1>
       <p class="text-sm">
         Last updated: <time datetime={lastUpdated.toISOString()}
@@ -26,7 +29,8 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
           >“How Developer Experience Holds Content Teams Back (and how to fix
           it)”</strong
         >, presented by <a href="https://www.knutmelvaer.no">Knut Melvær</a> (<a
-          href="https://www.sanity.io">Sanity.io</a
+          href="https://www.sanity.io?utm_source=devs4editors&utm_medium=referral&utm_campaign=jamstack-conference-2022"
+          >Sanity.io</a
         >) at <a href="https//jamstackconf.org">Jamstack Conf SF, 2022</a>.
       </p><p>
         The main points of the talk are presented below. You can also <a
@@ -36,13 +40,16 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
       </p>
 
       <div class="callout">
-        <h2>Passionate about editorial experience?</h2>
+        <h2>
+          Passionate about making editorial experience your team will love?
+        </h2>
         <p>
           Join
-          <a href="https://slack.sanity.io"
+          <a
+            href="https://slack.sanity.io?utm_source=devs4editors&utm_medium=referral&utm_campaign=jamstack-conference-2022"
             >the #editorial-experience channel on the Sanity Community Slack</a
           >
-          and share your thougths and questions!
+          and share your thoughts and questions!
         </p>
       </div>
 
@@ -52,8 +59,10 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
       </h2>
       Most developers are used to the idea that technology should work for us and
       not the other way around. We give software maintainers feedback in GitHub issues
-      and support formus. Content creators aren't necessarily used to the idea that
-      they can expect more from their tools.
+      and support formus. Conversely, content creators aren't necessarily used to
+      the idea that they can expect more from their tools. Or they have experienced
+      that developers are hesistant to help them, because it has often involved working
+      against the technology.
       <ol>
         <li>
           <h3>
@@ -63,7 +72,7 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
           </h3>
           <p class="no">
             You might love writing in Markdown and that's OK! But don't expect
-            content professional to use Markdown, MDX, or other specialized
+            content professionals to use Markdown, MDX, or other specialized
             syntax. Content creation for the web is hard enough by itself.
           </p><p class="yes">
             Strive to build and support proper tools for content creators so
@@ -117,10 +126,11 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
           <h3>Ask content creators what they need (and why)</h3>
 
           <p class="no">
-            Do not assume that the lack of feedback from content creators mean
-            that everything is OK. Don't uncriticially implement features they
-            might ask for either. It's also your responbility to make sure that
-            content is stored in a way that is maintainable and resilitent.
+            Do not assume that the lack of feedback from content creators means
+            that everything is OK. Be vary of feature requests that let content
+            creators override and break design systems and responsive design
+            from a CMS. It's also your responbility to make sure that content is
+            stored in a way that is maintainable and future-proof.
           </p>
           <p class="yes">
             Talk to content creators to understand what they need and where they
