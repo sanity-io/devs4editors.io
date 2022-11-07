@@ -29,8 +29,9 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
           href="https://www.sanity.io">Sanity.io</a
         >) at <a href="https//jamstackconf.org">Jamstack Conf SF, 2022</a>.
       </p><p>
-        The main points of the talk are presented below. You can also <a href=""
-          >download the slide deck</a
+        The main points of the talk are presented below. You can also <a
+          href="/How-DX-holds-Content-Creators-Back-Knut-Melvaer-Jamstack-Conf-2022.pdf"
+          download>download the slide deck</a
         >.
       </p>
 
@@ -61,14 +62,14 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
             content professional to use Markdown, MDX, or other specialized
             syntax. Content creation for the web is hard enough by itself.
           </p><p class="yes">
-            Let’s strive to build proper tools for content creators so they can
-            do their job and focus on what matters.
+            Strive to build and support proper tools for content creators so
+            they can do their job and focus on what matters.
           </p>
         </li>
         <li>
           <h3>Let content creators collaborate in the CMS</h3>
           <p class="no">
-            Don't force content creators to work in systems that allows loss of
+            Don't force content creators to work in systems that allow loss of
             work due to race conditions. Document locking is not an
             user-friendly solution either.
           </p>
@@ -95,16 +96,42 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
           </h3>
           <p>
             The requirements to build modern digital experiences demand
-            decoupled systems. But it has also made it harder for content
-            creators to predict how their content will be experienced by their
-            audience.
+            composeable systems connected with APIs. The same content is
+            expected to appear in different places. But this has also made it
+            harder for content creators to predict how their work will be
+            experienced by their audience.
           </p>
-          <p class="no"></p>
-          <p class="yes"></p>
+          <p class="no">
+            Don't leave content creators with a headless system that's not
+            documented and no ways of previewing changes before they go live.
+          </p>
+          <p class="yes">
+            Use content field labels, validation, and other features to give
+            helpful in-place context and cues for how to enter content
+            correctly. Work <em>together</em> with content creators to document the
+            system.
+          </p>
         </li><li>
           <h3>Ask content creators what they need (and why)</h3>
-          <p class="no"></p>
-          <p class="yes"></p>
+          <p>
+            Most developers are used to the idea that technology should work for
+            us and not the other way around. We give maintainers feedback in
+            GitHub Issues and support formus. Content creators aren't
+            necessarily used to the idea that they can expect more from their
+            tools.
+          </p>
+          <p class="no">
+            Do not assume that the lack of feedback from content creators mean
+            that everything is OK. Don't uncriticially implement features they
+            might ask for either, it's also your responbility to make sure that
+            content is stored in a way that is maintainable and resilitent.
+          </p>
+          <p class="yes">
+            Talk to content creators to understand what they need and where they
+            have friction. Observe how they use the system, and help them
+            understand what is possible and what is not. Always ask why a
+            feature is needed and what we are trying to achieve.
+          </p>
         </li>
       </ol>
     </main>
