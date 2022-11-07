@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+const lastUpdated = new Date("2022-11-07T02:56:33+0000");
 ---
 
 <!DOCTYPE html>
@@ -11,33 +12,101 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <!-- <Header title={SITE_TITLE} /> -->
     <main>
-      <h1>Developers 4 Editors</h1>
+      <h1>
+        <a href="/">👩‍💻 💞 ✍️<br /> Developers 4 Editors</a>
+      </h1>
+      <p class="text-sm">
+        Last updated: <time datetime={lastUpdated.toISOString()}
+          >{lastUpdated.toLocaleDateString()}</time
+        >
+      </p>
       <p>
-        This page was made as a part of the <strong
-          >How Developer Experience Holds Content Teams Back (and how to fix it)</strong
+        This page was made to complement the talk <strong
+          >“How Developer Experience Holds Content Teams Back (and how to fix
+          it)”</strong
         >, presented by <a href="https://www.knutmelvaer.no">Knut Melvær</a> (<a
           href="https://www.sanity.io">Sanity.io</a
         >) at <a href="https//jamstackconf.org">Jamstack Conf SF, 2022</a>.
+      </p><p>
+        The main points of the talk are presented below. You can also <a href=""
+          >download the slide deck</a
+        >.
       </p>
-      <h2>Passionate about editorial experience?</h2>
-      <p>
-        Join the #ediotial-experience channel, and share your thougths and
-        questions!
-      </p>
-      <h2>Principles</h2>
-      <h3>
-        #1 Don‘t expect content creators to write in your <code
-          >[**special**](syntax)</code
-        >
-      </h3>
-      <p><a href="">Add your experience</a></p>
-      <h3>#2 Let content creators collaborate in the CMS</h3>
-      <h3>#3 Give content creators flexibility where it matters</h3>
-      <h3>#4 Give content creators context, especially in decoupled systems</h3>
-      <h3>#5 Ask content creators what they need (and why)</h3>
-      <h2>Slide Deck</h2>
+
+      <div class="callout">
+        <h2>Passionate about editorial experience?</h2>
+        <p>
+          Join
+          <a href="https://slack.sanity.io"
+            >the #editorial-experience channel on the Sanity Community Slack</a
+          >
+          and share your thougths and questions!
+        </p>
+      </div>
+
+      <h2 id="5-things">
+        <a class="anchor-link" href="#5-things">#</a>
+        5 things developers should consider working with content creators
+      </h2>
+      <ol>
+        <li>
+          <h3>
+            Don‘t expect content creators to write in your <code
+              >[**special**](syntax)</code
+            >
+          </h3>
+          <p class="no">
+            You might love writing in Markdown and that's OK! But don't expect
+            content professional to use Markdown, MDX, or other specialized
+            syntax. Content creation for the web is hard enough by itself.
+          </p><p class="yes">
+            Let’s strive to build proper tools for content creators so they can
+            do their job and focus on what matters.
+          </p>
+        </li>
+        <li>
+          <h3>Let content creators collaborate in the CMS</h3>
+          <p class="no">
+            Don't force content creators to work in systems that allows loss of
+            work due to race conditions. Document locking is not an
+            user-friendly solution either.
+          </p>
+          <p class="yes">
+            Let content creators collaborate in real-time and let them roll back
+            specific changes if they need to.
+          </p>
+        </li><li>
+          <h3>Give content creators flexibility where it matters</h3>
+          <p class="no">
+            Don't give content creators infinite flexibility as it adds
+            cognitive overhead. Be careful with allowing modifications to pixel
+            and color hex values in your content. It makes it easy to break
+            design patterns and accessbility guidelines.
+          </p>
+          <p class="yes">
+            Use the benefits of modern frontend tools and component libraries
+            and give content creators meaningful options that allows them to
+            express priority, variation, and emphazis.
+          </p>
+        </li><li>
+          <h3>
+            Give content creators context, especially in decoupled systems
+          </h3>
+          <p>
+            The requirements to build modern digital experiences demand
+            decoupled systems. But it has also made it harder for content
+            creators to predict how their content will be experienced by their
+            audience.
+          </p>
+          <p class="no"></p>
+          <p class="yes"></p>
+        </li><li>
+          <h3>Ask content creators what they need (and why)</h3>
+          <p class="no"></p>
+          <p class="yes"></p>
+        </li>
+      </ol>
     </main>
     <Footer />
   </body>

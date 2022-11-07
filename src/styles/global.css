@@ -4,65 +4,84 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 @import url("/fonts/inter.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  font-family: Inter, Verdana, sans-serif;
-  margin: auto;
-  padding: 20px;
-  max-width: 65ch;
-  text-align: left;
-  background-color: #111;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.5;
-  color: #fff;
+  font-family: Inter, sans-serif;
+  @apply p-12;
+  @apply bg-gray-800;
+  @apply text-stone-200;
 }
+main {
+  @apply max-w-2xl mx-auto;
+}
+
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-  color: #fff;
+h3 {
+  @apply font-bold;
+}
+h1,
+h2 {
+  @apply my-6;
+}
+h1 {
+  @apply text-4xl;
+  @apply md:text-6xl;
+}
+
+h1 a {
+  @apply no-underline text-gray-200;
+}
+
+h2 {
+  @apply text-2xl;
+  @apply md:text-3xl;
+}
+h3 {
+  @apply text-lg;
+  @apply md:text-xl;
+  @apply my-4;
+}
+p {
+  @apply my-2 mb-4;
 }
 a {
-  color: #3273dc;
+  @apply text-blue-300;
+  @apply hover:text-blue-100;
+  @apply underline;
 }
-nav a {
-  margin-right: 10px;
+
+ol {
 }
-textarea {
-  width: 100%;
-  font-size: 16px;
+ol li {
+  @apply list-decimal;
+  @apply pb-4;
 }
-input {
-  font-size: 16px;
+
+footer {
+  @apply p-5;
 }
-content {
-  line-height: 1.6;
+
+.callout {
+  @apply bg-slate-700;
+  @apply pt-1 pb-4 px-8 my-8 -mx-8;
+  @apply rounded-md;
 }
-table {
-  width: 100%;
+
+.no {
+  @apply -mx-2 p-2;
+  @apply bg-red-500 bg-opacity-20;
+  @apply rounded-md;
 }
-img {
-  max-width: 100%;
-  height: auto;
+.yes {
+  @apply -m-2 p-2;
+  @apply bg-green-500 bg-opacity-20;
+  @apply rounded-md;
 }
-code {
-  padding: 2px 5px;
-  background-color: #444;
-}
-pre {
-  padding: 1rem;
-}
-pre > code {
-  all: unset;
-}
-blockquote {
-  border: 1px solid #999;
-  color: #222;
-  padding: 2px 0px 2px 20px;
-  margin: 0px;
-  font-style: italic;
+.anchor-link {
+  @apply -ml-6 absolute;
+  @apply text-slate-500;
 }
