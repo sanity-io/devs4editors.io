@@ -1,9 +1,8 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
-const lastUpdated = new Date("2022-11-07T02:56:33+0000");
+const lastUpdated = new Date("2022-11-08T02:56:33+0000");
 ---
 
 <!DOCTYPE html>
@@ -76,7 +75,10 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
             syntax. Content creation for the web is hard enough by itself.
           </p><p class="yes">
             Strive to build and support proper tools for content creators so
-            they can do their job and focus on what matters.
+            they can do their job and focus on what matters. Adopt presentation
+            agnostic formats such as <a href="https://www.portabletext.org"
+              >Portable Text</a
+            > and build out custom content blocks that makes sense for your goals.
           </p>
         </li>
         <li>
@@ -96,12 +98,12 @@ const lastUpdated = new Date("2022-11-07T02:56:33+0000");
             Don't give content creators infinite flexibility as it adds
             cognitive overhead. Be careful with allowing modifications to pixel
             and color hex values in your content. It makes it easy to break
-            design patterns and accessbility guidelines.
+            design consistency and accessbility guidelines.
           </p>
           <p class="yes">
-            Use the benefits of modern frontend tools and component libraries
-            and give content creators meaningful options that allows them to
-            express priority, variation, and emphazis.
+            Use the benefits of modern frontend tools, design systems, and
+            component libraries and give content creators meaningful options
+            that allows them to express priority, variation, and emphazis.
           </p>
         </li><li>
           <h3>
